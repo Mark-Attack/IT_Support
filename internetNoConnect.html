@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Internet/ Wi-Fi not working</title>
+</head>
+<body class="body-cont">
+<main class="main-cont">   
+    <section class="nav-sec">
+        <nav>
+            <li><a href="index.html" class="home-btn">Home</a></li>
+        </nav>
+    </section>
+
+    <section class="heading-sec">
+        <h1>Internet/ Wi-Fi not working</h1>
+    </section>
+
+    <section class="issues-sec">
+        <h1>Potential Issues</h1>
+        <h2>Network Card problems</h2>
+        <h2>ISP or Networking Problems</h2>
+        <h2>Cable Problems</h2>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <h1>Resolution</h1>
+        <h2>Wi-Fi NOT working, Wired connection (Ethernet) working</h2>
+        <ul>
+            <li>It is an issue related to the specific device's Network Card</li>
+            <li>Ensure that the network adapter is enabled</li>
+            <li>Ensure that the user is trying to connect to the correct SSID</li>
+            <li>Use CMD command <strong>ipconfig /flushdns</strong> to clear the DNS cache on the PC</li>
+            <li>Use CMD commands <strong>ipconfig /release</strong>, the <strong>ipconfig /renew</strong> to clear the old IP address and request a new one from the DHCP server</li>
+            <li>Diconnect and reconnect to the Wi-fi</li>
+            <li>If a VPN is being used, then temporarily disconnect it and try connecting to the Wi-Fi (VPNs can block internet if misconfigured)</li>
+            <li>Restart the PC to refresh the network connection</li>
+            <li>Rare case: nework adapter is dead and needs replacing</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_51.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <h2>Both Wi-Fi and Wired connection (Ethernet) NOT working</h2>
+        <p>Find out the exact error message: <strong>Connected, no internet</strong> or <strong>Not connected </strong></p>
+        <ul>
+            <li><strong>Connected, no internet</strong> means the network card and ethernet cable are both working and connecting to the network</li>
+            <li>Its the network that cannot reach the internet</li>
+            <li>Restart the moderm</li>
+            <li>Test other devices on the same network to see if the problem still exists</li>
+            <li>Contact ISP to determine if any outages occured</li>
+            <br>
+            <li><strong>Not Connected</strong> means the device is not connected to any network</li>
+            <li>This is a local connection issue</li>
+            <li>For a wired connection, ensure that the ethernet cable is properly plugged in</li>
+            <li>Try testing with a different ethernet cable to rule out a faulty cable</li>
+            <li>Use CMD command <strong>ipconfig /flushdns</strong> to clear the DNS cache on the PC</li>
+            <li>Use CMD commands <strong>ipconfig /release</strong>, the <strong>ipconfig /renew</strong> to clear the old IP address and request a new one from the DHCP server</li>
+            <li>For a wireless connection, apply the network adapter steps mentioned above</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_52.PNG" alt="Windows Update">
+        <br>
+    </section>
+</main>
+</body>
+</html>

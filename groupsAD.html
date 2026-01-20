@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Adding User to Group</title>
+</head>
+<body class="body-cont">
+<main class="main-cont">   
+    <section class="nav-sec">
+        <nav>
+            <li><a href="index.html" class="home-btn">Home</a></li>
+        </nav>
+    </section>
+
+    <section class="heading-sec">
+        <h1>Creating a group in AD and Adding a User</h1>
+    </section>
+
+    <section class="issues-sec">
+        <h1>Prerequisites</h1>
+        <h2>You're logged in to a domain-joined machine</h2>
+        <h2>You have permissions to create groups</h2>
+        <h2>Active Directory Users and Computers (ADUC) is installed</h2>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <h3>Steps:</h3>
+        <ul>
+            <li>In windows searchbar type <strong>adm</strong> and click Windows Administrative Tools</li>
+            <li>Open Active Directory Users and Computers</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_4.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>navigate to the Organizational Unit (OU) where you want the group created</li>
+            <li>right click then click: new -> group</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_15.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>provide a name for the group</li>
+            <li>configure <strong>Group Scope</strong> and <strong>Group Type</strong> based on company's requirements</li>
+            <li>click OK to create the group</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_16.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>right click on newly created group and click <strong>properties</strong></li>
+            <li>The group's properties window would appear</li>
+            <li>navigate to the <strong>members</strong> tab (notice no members are currently in this group)</li>
+            <li>click <strong>Add</strong> to add a User to this group</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_17.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>type the user's name into the search box then click <strong>Check Names</strong></li>
+            <li>the user's name will appear with their email in brackets</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_18.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click OK to add the User to the group</li>
+            <li>notice the User now appears in the group's <strong>members</strong> tab</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_19.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>How to Configure a DHCP Scope (Windows Server 2022)</title>
+</head>
+<body class="body-cont">
+<main class="main-cont">   
+    <section class="nav-sec">
+        <nav>
+            <li><a href="index.html" class="home-btn">Home</a></li>
+        </nav>
+    </section>
+
+    <section class="heading-sec">
+        <h1>How to Configure a DHCP Scope</h1>
+        <h2>(Windows Server 2022)</h2>
+    </section>
+
+    <section class="issues-sec">
+        <h1>Prerequisites</h1>
+        <h2>Windows Server is Installed</h2>
+    </section>
+
+    <section class="resolution-sec">
+        <h1>Steps:</h1>
+        <ul>
+            <li>click the Windows button and click <strong>Server Manager</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_56.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>on the top right, click Tools and then click <strong>DHCP</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_65.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click the dropdown of the Domain and then right click on <strong>IPV4</strong></li>
+            <li>click <strong>New Scope</strong> and the Scope Wizard will appear</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_66.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Give the Scope a name then click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_67.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Configure a range of IP addresses then click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_68.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Exclude the addresses that you <strong>DO NOT</strong> want the server to give out</li>
+            <li>These addresses will be reserved for static IP's</li>
+            <li>click <strong>next</strong> when completed</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_69.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Set the Lease Duration then click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_70.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>check the <strong>Yes</strong> box to configure addition settings</li>
+            <li>click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_71.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>specify the IP address of the router (default gateway) and add it</li>
+            <li>click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_72.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>specify the Parent Domain for the clients to use for DNS name resolution</li>
+            <li>click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_73.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>configure WINS Servers setting if needed</li>
+            <li>click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_74.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>check <strong>Yes</strong> to activate the Scope</li>
+            <li>click <strong>next</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_75.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click <strong>Finish</strong> to complete the setup</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_76.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>right click the Domain Name and click <strong>All Tasks</strong></li>
+            <li>click <strong>Restart</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_77.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>once completed, go back to <strong>IPV4</strong> and view the Scope you created</li>
+            <li>it should say <strong>**Active**</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_78.PNG" alt="Windows Update">
+        <br>
+    </section>
+    
+</main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.body-cont{
+    background-color: rgba(76, 76, 76, 0.099);
+}
+.main-cont{
+    width: 60%;
+    margin: auto;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 900px) {
+    .main-cont{
+        width: 100%;
+        margin: auto;
+        background-color: aliceblue;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.heading-sec{
+    text-align: center;
+    padding: .5rem;
+}
+
+.issues-sec{
+    background-color: rgb(255, 61, 61);
+}
+.issues-sec h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.resolution-sec h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.nav-sec{
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.home-btn{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(152, 74, 1, 0.764);
+    padding: 1rem;
+    border-radius: 50px;
+}
+.home-btn:hover{
+    background-color: rgba(193, 93, 0, 0.903);
+}
+
+.pdfImg{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.links{
+    /*list-style-type: none;*/
+}
+
+.internetImg{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#testPDF{
+    width: 60%;
+    height: 800px;
+    display: block;
+  margin: 0 auto;
+}
