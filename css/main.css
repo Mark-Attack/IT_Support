@@ -1,6 +1,53 @@
+*{
+    font-family: arial, 'Franklin Gothic Medium', sans-serif;
+}
+
 .body-cont{
     background-color: rgba(76, 76, 76, 0.099);
 }
+
+/*Main content for index page Start*/
+#header{
+    text-align: center;
+    background-color: rgb(92, 136, 255);
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+#index-body{
+    background-color:rgb(255, 255, 255);
+}
+
+.main-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; /* Optional: set a width smaller than the container */
+    padding-bottom: 4rem;
+}
+@media screen and (max-width: 900px) {
+    .main-img{
+        width: 70%;
+        padding-bottom: 2rem;
+    }
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #main{
+        flex-direction: column;
+    }
+}
+/*Main content for index page End*/
+
+
+/*Main content for child pages Start*/
 .main-cont{
     width: 60%;
     margin: auto;
@@ -17,6 +64,9 @@
         padding: 0;
     }
 }
+/*Main content for child pages End*/
+
+
 
 .heading-sec{
     text-align: center;
@@ -45,12 +95,13 @@
 .home-btn{
     text-decoration: none;
     color: aliceblue;
-    background-color: rgba(152, 74, 1, 0.764);
+    background-color: rgb(92, 136, 255);
     padding: 1rem;
     border-radius: 50px;
 }
 .home-btn:hover{
-    background-color: rgba(193, 93, 0, 0.903);
+    background-color: rgb(56, 109, 255);
+    font-size: 1.1rem;
 }
 
 .pdfImg{
@@ -62,8 +113,54 @@
 }
 
 .links{
-    /*list-style-type: none;*/
+    list-style-type: none;
 }
+.links a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.links a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.links a:hover{
+    color: rgb(92, 136, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/*section borders start*/
+.AD-links{
+    background-color: aliceblue;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px;
+}
+
+.M365-links{
+    background-color: aliceblue;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px;
+}
+
+.Gen-links{
+    background-color: aliceblue;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px;
+}
+.DHCP-links{
+    background-color: aliceblue;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px;
+}
+/*section borders end*/
 
 .internetImg{
     display: block;
