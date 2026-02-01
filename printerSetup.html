@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Network Printer Setup</title>
+</head>
+<body class="body-cont">
+<main class="main-cont">   
+    <section class="nav-sec">
+        <nav>
+            <li><a href="index.html" class="home-btn">Home</a></li>
+        </nav>
+    </section>
+
+    <section class="heading-sec">
+        <h1>Network Printer Setup</h1>
+    </section>
+
+    <section class="issues-sec">
+        <h1>Prerequisites</h1>
+        <h2>You have permission to setup the network printer</h2>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <h3>Steps:</h3>
+        <ul>
+            <li>Go into printer's settings or print a config page and determine the printer's <strong>MAC address</strong></li>
+            <li>Printers usually have separate MAC addresses based on wired or wireless connections</li>
+            <li>Choose the appropriate MAC address for your situation</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_79.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click on the start button</li>
+            <li>click <strong>Server Manager</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_56.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click tools on the top right</li>
+            <li>then click <strong>DHCP</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <img class="internetImg" src="./Images/img_99.PNG" alt="Windows Update">
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>click the URL dropdown, then click <strong>IPV4</strong> dropdown</li>
+            <li>click the <strong>Scope</strong> dropdown, the click <strong>Address Pool</strong></li>
+            <li>Determine the list of available IP addresses</li>
+            <li>Pick an IP address to assign to the network printer</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_80.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Right click the <strong>Reservations</strong> folder</li>
+            <li>Click new reservation</li>
+            <li>A new reservation window will popup</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_81.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Give the printer a name</li>
+            <li>Type in an available IP address from the address pool</li>
+            <li>Type the printer's MAC address</li>
+            <li>Type a description</li>
+            <li>Leave support type to both</li>
+            <li>Click <strong>Add</strong> once completed</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_82.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>The IP address and the printer name would appear under the <strong>Reservations</strong> folder</li>
+            <li>It should also be in the <strong>Address Leases</strong> folder</li>
+            <li>However, since the printer is not yet connected it sould state <strong>Inactive</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_83.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Next, go into Windows Administrative tools and open <strong>DNS</strong></li>
+            <li>We need to tell the DNS server that the printer is located at the IP address we previously determined</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_84.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>In the <strong>Forward lookup zones</strong> folder, locate the company's/ specified URL</li>
+            <li>Notice that no printer entries are added on the right side (Host A entries)</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_85.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Right click the URL and click <strong>New Host (A)</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_86.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>A <strong>New Host</strong> window will popup</li>
+            <li>Name it the same name you gave to your printer</li>
+            <li>Add the specified IP address you gave to the printer</li>
+            <li>Click <strong>Add Host</strong> once completed</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_87.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Notice the printer entry is now added</li>
+            <li>The IP address is also specified</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_88.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>We now need to add the printer to the <strong>Print Server</strong></li>
+            <li>A print server is a central computer (usually Windows Server) that:</li>
+                <ul>
+                    <li>Knows about all the printers</li>
+                    <li>Holds the printer drivers</li>
+                    <li>Controls who can print</li>
+                    <li>Manages the print queue</li>
+                    <li>Shares printers to users on the network</li>
+                </ul>
+            <li>click the start button and click the down arrow on windows admin tools</li>
+            <li>locate and click on <strong>Print Management</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_89.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Click on the <strong>Print Servers</strong> dropdown, then the local server's dropdown</li>
+            <li>The <strong>Printers</strong> icon should be located at the bottom</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_90.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Right click the Printers icon and click <strong>Add Printer</strong></li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_91.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Check the option that says <strong>add by Printer IP or Hostname</strong></li>
+            <li>click next</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_92.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Change the type of device to <strong>TCP/IP Device</strong></li>
+            <li>Type in the printer's name or its IP address</li>
+            <li><strong>Port name</strong> should auto populate</li>
+            <li>check the auto detect printer driver checkbox</li>
+            <li>Click next once completed</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_93.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Pick the appropriate drive for the printer</li>
+            <li>Click next</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_94.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Give the printer a name</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_95.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>The printer information will be displayed a last time</li>
+            <li>click next</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_96.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>Click <strong>Finish</strong> to complete the install wizard</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_97.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    <section class="resolution-sec">
+        <ul>
+            <li>The new printer will appear on the list of printers</li>
+        </ul>   
+        <br> 
+    </section>
+
+    <section>
+        <div class="pdfSec">
+            <img class="pdfImg" src="./Images/img_98.PNG" alt="new user">
+        </div>
+        <br>
+    </section>
+
+    
+</main>
+</body>
+</html>
