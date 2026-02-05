@@ -18,6 +18,21 @@
     background-color:rgb(255, 255, 255);
 }
 
+.about-heading{
+    text-align: center;
+}
+
+.about-para{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+@media screen and (max-width: 600px) {
+    .about-para{
+        width: 80%;
+    }
+}
+
 .main-img{
     display: block;
     margin-left: auto;
