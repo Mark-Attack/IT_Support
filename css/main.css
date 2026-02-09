@@ -175,12 +175,40 @@
     padding: 1rem;
     box-shadow: 2px 2px 5px;
 }
+.Cable-links{
+    background-color: aliceblue;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px;
+}
 /*section borders end*/
+
+.connectors{
+    text-align: center;
+}
+
+.DPort-para{
+    margin: auto;
+    width: 80%;
+}
+
+.typeA{
+    text-align: center;
+}
 
 .internetImg{
     display: block;
     width: 100%;
     max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.ethernetImg{
+    display: block;
+    width: 100%;
+    max-width: 300px;
     margin: auto;
     border: 1px solid black;
 }
