@@ -14,6 +14,27 @@
     margin-bottom: 2rem;
 }
 
+#footer{
+    background-color: rgb(92, 136, 255);
+}
+#footer h2{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+#footer p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#footer a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+#footer a:hover{
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
 #index-body{
     background-color:rgb(255, 255, 255);
 }
